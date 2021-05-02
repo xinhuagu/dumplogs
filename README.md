@@ -19,9 +19,6 @@ or
 ```bash
 python3 -m pip install https://github.com/xinhuagu/dumplogs.git
 ```
-## Options
-
-
 
 ## Usage
 Make sure the AWS_PROFILE is set properly
