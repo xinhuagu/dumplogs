@@ -15,7 +15,7 @@ setup(
     author_email='xinhua.gu@gmail.com',
     license='LICENSE.txt',
     description='aws logs dump and analytics tool',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     packages=find_packages(),
     platforms='any',
     python_requires=">=3.5.*",
