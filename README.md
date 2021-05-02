@@ -3,7 +3,7 @@ Dumplogs is a command line tool (python) for dumping the aws cloudwatch log stre
 
 ## Motivation
 On AWS cloud, Users can get historical AWS cloudwatch logs by exporting the log group into S3 bucket. See [AWS logs S3 Export](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/S3Export.html)
-The exported file are all in gz format and are placed in separate directory. one way to download them into loacl machine is to use "aws s3 cp s3://WholeBucket LocalFolder --recursive" , and then unzip all the gz files. This operation on AWS is ineviable fussiness. 
+The exported file are all in gz format and are placed in separate directory. one way to download them into loacl machine is to use "aws s3 cp s3://WholeBucket LocalFolder --recursive" , and then unzip all the gz files. This operation on AWS is inevitable fussiness. 
 
 A more direct approach to dump the logs into local files is to use "aws logs" cli command. But aws-cli logs only allows max. 50 log streams to be retrieved at a time. 
 In order to dump the whole logs streams from a log group, user need record the 'next_token' every time by himself.
