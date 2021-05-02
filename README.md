@@ -19,15 +19,31 @@ or
 ```bash
 python3 -m pip install https://github.com/xinhuagu/dumplogs.git
 ```
+## Options
+
+
 
 ## Usage
+Make sure the AWS_PROFILE is set properly
+```bash
+export AWS_PROFILE=my_profile
+```
 
-```python
-import foobar
+```bash
+usage: dumplogs [-h] [--profile AWS_PROFILE] [-o OUTPUT] group_name
+```
+- -h --help ``help information``
+- -o --output ``output directory, default: current directory``
+- --profile ``aws profile, default: AWS_PROFILE env var``
+- group_name ``aws log group name``
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+## Example
+```bash
+dumplogs /aws/lambda/dpa-kafka-logs -o test --profile DEV
+```
+or 
+```bash
+dumplogs /aws/lambda/dpa-kafka-logs
 ```
 
 ## Contributing
@@ -36,4 +52,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[Revised BSD License](https://github.com/xinhuagu/dumplogs/blob/master/LICENSE.txt)
