@@ -1,5 +1,5 @@
 # Dumplogs
-Dumplogs is a python tool for dumping the aws cloudwatch log streams into local files.
+Dumplogs is a command line tool (python) for dumping the aws cloudwatch log streams into local files.
 
 ## Motivation
 On AWS cloud, Users can get historical AWS cloudwatch logs by exporting the log group into S3 bucket. See [AWS logs S3 Export](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/S3Export.html)
