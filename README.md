@@ -15,13 +15,13 @@ Dumplogs is inspired by "aws logs" , it aims to dump (and filter) the whole log 
 ## Installation
 
 ```bash
-pip3 install https://github.com/xinhuagu/dumplogs.git
+pip3 install git+https://github.com/xinhuagu/dumplogs.git
 ```
 
 or
 
 ```bash
-python3 -m pip install https://github.com/xinhuagu/dumplogs.git
+python3 -m pip install git+https://github.com/xinhuagu/dumplogs.git
 ```
 
 ## Usage
